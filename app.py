@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 
-df = pd.read_csv("projects/Ai_impact on health_cleaning.csv")
+df = pd.read_csv("Ai_impact on health_cleaning.csv")
 
 
 st.markdown(
