@@ -586,14 +586,15 @@ elif opt =="💡 Key Insights":
     )
    
 # --- Tab 1: Primary Findings Only ---
-    with tab1:
-        st.subheader("🎯 Primary Data Findings & Key Takeaways")
+    
+with tab1:
+    st.subheader("🎯 Primary Data Findings & Key Takeaways")
 
     col1, col2 = st.columns(2)
 
     with col1:
         st.markdown(
-            """
+            textwrap.dedent("""
             <div class="card-grid">
 
                 <div class="insight-card">
@@ -627,13 +628,13 @@ elif opt =="💡 Key Insights":
                 </div>
 
             </div>
-            """,
+            """),
             unsafe_allow_html=True,
         )
 
     with col2:
-            st.markdown(
-            """
+        st.markdown(
+            textwrap.dedent("""
             <div class="card-grid">
 
                 <div class="insight-card">
@@ -666,11 +667,10 @@ elif opt =="💡 Key Insights":
                 </div>
 
             </div>
-            """,
+            """),
             unsafe_allow_html=True,
         )
- 
-    
+
     
     
     with tab2:
