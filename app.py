@@ -584,7 +584,92 @@ elif opt =="💡 Key Insights":
             "📊 Stats & Unique Metrics",
         ]
     )
+   
+# --- Tab 1: Primary Findings Only ---
+with tab1:
+    st.subheader("🎯 Primary Data Findings & Key Takeaways")
 
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown(
+            """
+            <div class="card-grid">
+
+                <div class="insight-card">
+                    <div class="insight-title">🤖 1. AI Tool Performance</div>
+                    <div class="insight-desc">
+                        • Fitness Trackers recorded the highest average health improvement of
+                        <span class="highlight-num">12.42%</span>.<br>
+                        • Mental Health Apps and Telemedicine showed the highest average satisfaction score of 5.57/10.<br>
+                        • All four AI tool categories showed positive average health score changes.
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-title">⚖️ 2. BMI Category Analysis</div>
+                    <div class="insight-desc">
+                        • The Obese BMI category recorded the highest average improvement of
+                        <span class="highlight-num">12.89%</span>.<br>
+                        • Normal BMI participants showed an average improvement of 12.11%.<br>
+                        • Health score changes were observed across all four BMI categories.
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-title">👥 3. Age Group Analysis</div>
+                    <div class="insight-desc">
+                        • The 18–25 age group recorded the highest average improvement of
+                        <span class="highlight-num">12.53%</span>.<br>
+                        • Positive average health score changes appeared across all age groups.<br>
+                        • Satisfaction scores varied slightly between age categories.
+                    </div>
+                </div>
+
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    with col2:
+        st.markdown(
+            """
+            <div class="card-grid">
+
+                <div class="insight-card">
+                    <div class="insight-title">📊 4. AI Usage Level Analysis</div>
+                    <div class="insight-desc">
+                        • Medium AI usage recorded the highest average improvement of
+                        <span class="highlight-num">12.44%</span>.<br>
+                        • High usage showed an average improvement of 12.15%.<br>
+                        • More usage hours did not always correspond to higher improvement.
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-title">❤️ 5. Chronic Condition Analysis</div>
+                    <div class="insight-desc">
+                        • Participants with chronic conditions showed an average improvement of 12.38%.<br>
+                        • Participants without chronic conditions showed an average improvement of 11.94%.<br>
+                        • Both groups showed positive average health score changes.
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-title">⭐ 6. Satisfaction & Risk Analysis</div>
+                    <div class="insight-desc">
+                        • Low-risk participants recorded an average satisfaction score of 5.57/10.<br>
+                        • High-risk participants showed the highest average improvement of
+                        <span class="highlight-num">12.82%</span>.<br>
+                        • Satisfaction and improvement varied across risk categories.
+                    </div>
+                </div>
+
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+ 
     
     
     
