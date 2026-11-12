@@ -587,7 +587,7 @@ elif opt =="💡 Key Insights":
    
 # --- Tab 1: Primary Findings Only ---
     with tab1:
-    st.subheader("🎯 Primary Data Findings & Key Takeaways")
+        st.subheader("🎯 Primary Data Findings & Key Takeaways")
 
     col1, col2 = st.columns(2)
 
@@ -632,7 +632,7 @@ elif opt =="💡 Key Insights":
         )
 
         with col2:
-        st.markdown(
+            st.markdown(
             """
             <div class="card-grid">
 
