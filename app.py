@@ -3,6 +3,7 @@ import plotly.express as px
 import streamlit as st
 from streamlit_option_menu import option_menu
 import numpy as np
+import textwrap
 
 st.set_page_config(
     page_title="AI Health Analytics", page_icon="📊", layout="wide"
@@ -587,7 +588,7 @@ elif opt =="💡 Key Insights":
    
 # --- Tab 1: Primary Findings Only ---
     
-with tab1:
+    with tab1:
     st.subheader("🎯 Primary Data Findings & Key Takeaways")
 
     col1, col2 = st.columns(2)
